@@ -7,7 +7,7 @@
     rgba(231, 205, 60, 0.1),
     rgba(231, 205, 60, 1) 90%
   ),
-  url(./../../../public/assets/card-bg2.jpg);
+  url(../../assets/card-bg2.jpg);
 
   
   background-position: center;
@@ -50,19 +50,25 @@
   position: absolute;
   top: -5px;
   left: -3px;
+  line-height: 2.2;
 
   border: 3px solid #e7cd3c;
   border-radius: 50%;
   
   display: inline-block;
-  padding: 8px;
   
-  height: 20px;
-  width: 20px;
+  height: 36px;
+  width: 36px;
   
   color: #ffffff;
   text-align: center;
   background-color: #e7cd3c;
+}
+
+.unknown {
+  font-size: 80px;
+  color: white;
+  line-height: 2;
 }
 
 .chip span:last-of-type {
@@ -81,8 +87,12 @@
 .card__content {
   text-align: center;
   border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   padding: 20px;
+  height: 179px;
   backdrop-filter: blur(8px);
   background-color: #ffffff6e;
 

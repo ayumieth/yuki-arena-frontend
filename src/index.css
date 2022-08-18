@@ -4,7 +4,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Luckiest Guy', cursive;
   
-  background-image: url(./../public/assets/bg.jpg);
+  background-image: url(./assets/bg.jpg);
   background-color: rgba(var(--color-primary-rgb), 0.9);
   background-blend-mode: color-burn;
   background-attachment: fixed;

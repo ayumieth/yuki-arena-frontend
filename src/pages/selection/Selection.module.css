@@ -1,10 +1,42 @@
 .selection {
-  margin-top: 200px;
+  max-width: 960px;
+  width: 90%;
+  margin: 60px auto 0px auto;
+}
+
+.wallet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.wallet .button {
+  cursor: pointer;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(25, 143, 25);
+
+  width: 150px;
+  max-width: 40%;
+  padding: 8px 20px;
+
+  border: none;
+  border-radius: 5px;
+  font-family: 'Luckiest Guy', cursive;
+
+  transition-duration: 0.2s;
+  transition-property: opacity background-color;
+}
+
+.wallet .button:hover {
+  background-color: rgb(43, 170, 43);
 }
 
 .selection .head {
   color: #ffffff;
   text-align: center;
+  margin-top: 100px;
 }
 
 .selection .head .title {
@@ -29,12 +61,21 @@
 .selection .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-items: center;
   flex-wrap: wrap;
 
-  margin-top: 60px;
+  margin-top: 50px;
   height: 350px;
+}
+
+.selection .content .empty {
+  font-size: 30px;
+  color: white;
+}
+
+.unknown {
+  font-size: 80px;
+  color: white;
 }
 
 .body .heading {
@@ -124,15 +165,14 @@
 
 .card:hover {
   filter: grayscale(0%);
-  transform: scale(1.1);
-  
-  height: 300px;
-  box-shadow: 0px 0px 40px 10px rgba(253, 198, 7, 0.5);
+  /* transform: scale(1.0); */
+  /* height: 300px; */
+  box-shadow: 0px 0px 40px 10px rgba(120, 120, 120, 0.5);
 }
 
 .card:hover .card__title {
   color: #ffffff;
-  background-color: #fdc807bd;
+  background-color: grey;
   clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
 }
 
